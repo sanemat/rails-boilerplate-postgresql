@@ -4,6 +4,6 @@ FROM postgres
 RUN { \
     echo 'CREATE DATABASE rails_boilerplate_test;'; \
     echo 'CREATE DATABASE rails_boilerplate_development;'; \
-    echo 'GRANT ALL PRIVILEGES ON DATABASE rails_boilerplate_test TO rails_boilerplate'; \
-    echo 'GRANT ALL PRIVILEGES ON DATABASE rails_boilerplate_development TO rails_boilerplate'; \
+    echo 'GRANT ALL PRIVILEGES ON DATABASE rails_boilerplate_test TO rails_boilerplate;'; \
+    echo 'GRANT ALL PRIVILEGES ON DATABASE rails_boilerplate_development TO rails_boilerplate;'; \
 } > /docker-entrypoint-initdb.d/init.sql
