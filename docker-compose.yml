@@ -6,6 +6,11 @@ services:
       dockerfile: Dockerfile.postgresql
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
     environment:
       - POSTGRES_USER=rails_boilerplate
       - POSTGRES_PASSWORD=password
+volumes:
+  db-data:
+    driver: local
