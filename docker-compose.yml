@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.postgresql
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=rails_boilerplate
+      - POSTGRES_PASSWORD=password
