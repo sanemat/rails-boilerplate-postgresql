@@ -20,6 +20,10 @@ services:
       - "3000:3000"
     depends_on:
       - db
+    environment:
+      - DB_USER=rails_boilerplate
+      - DB_PASSWORD=password
+      - DB_HOST=db
 volumes:
   db-data:
     driver: local
