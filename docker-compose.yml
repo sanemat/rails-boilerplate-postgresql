@@ -24,6 +24,7 @@ services:
       - DB_USER=rails_boilerplate
       - DB_PASSWORD=password
       - DB_HOST=db
+      - PARALLEL_WORKERS=1
 volumes:
   db-data:
     driver: local
