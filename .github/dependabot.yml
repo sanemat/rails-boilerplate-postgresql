@@ -6,10 +6,6 @@ updates:
     interval: daily
     time: "22:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: bootsnap
-    versions:
-    - 1.7.0
 - package-ecosystem: npm
   directory: "/"
   schedule:
